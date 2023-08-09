@@ -1,0 +1,18 @@
+.img-icon{
+    width: 3%;
+}
+
+.bar{
+    width: 20%;
+    border: solid 1px #fff;
+    border-radius: 15px;
+}
+
+.progress-bar{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: linear-gradient(90deg, #777CF4 0%, #F47777 134.74%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.19), rgba(255, 255, 255, 0.19));
+    border-radius: 15px;
+}
