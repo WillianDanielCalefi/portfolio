@@ -1,13 +1,30 @@
-<h3 style="color: var(--title-bar)">Experiência:</h3>
+<h3 class="title m-0 py-2">Experiência</h3>
 
-<div class="pt-2">
-    <app-progress-bar [img]="'assets/imagens/angular.png'" [tempo_anos]="3.5"></app-progress-bar>
+<div>
+    <P class="infos">Frontend developer com 4 anos de experiencia, transformando designs em experiências.</P>
 </div>
 
-<div class="pt-2">
-    <app-progress-bar [img]="'assets/imagens/javascript.png'" [tempo_anos]="4"></app-progress-bar>
+<div class="img-empresa">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <img style="width: 25%;" src="assets/imagens/prefeitura.png" alt="">
+        <div class="circle-empresa" style="background-color: #f02b2b"></div>
+    </div>
+    <div style="display: flex; align-items: center; flex-direction: column; justify-content: flex-end;">
+        <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
+            <img style="width: 85%;" src="assets/imagens/abe3.png" alt="">
+        </div>
+        <div class="circle-empresa" style="background-color: #ffc200"></div>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <img style="width: 25%;" src="assets/imagens/itau.png" alt="">
+        <div class="circle-empresa" style="background-color: #2f329c"></div>
+    </div>
 </div>
 
-<div class="pt-2">
-    <app-progress-bar [img]="'assets/imagens/typescript.png'" [tempo_anos]="3.5"></app-progress-bar>
+<div style="width: 80%;">
+    <app-progress-bar [img]="'assets/imagens/angular.png'" [tempo_anos]="3.5" [tec_empresa]="['prefeitura', 'abe3', 'itau']"></app-progress-bar>
+    <app-progress-bar [img]="'assets/imagens/typescript.png'" [tempo_anos]="3.5" [tec_empresa]="['prefeitura', 'abe3', 'itau']"></app-progress-bar>
+    <app-progress-bar [img]="'assets/imagens/javascript.png'" [tempo_anos]="4" [tec_empresa]="['prefeitura', 'abe3', 'itau']"></app-progress-bar>
+    <app-progress-bar [img]="'assets/imagens/php.png'" [tempo_anos]="2" [tec_empresa]="['prefeitura', 'abe3']"></app-progress-bar>
+    <app-progress-bar [img]="'assets/imagens/sql.png'" [tempo_anos]="2" [tec_empresa]="['prefeitura', 'abe3']"></app-progress-bar>
 </div>

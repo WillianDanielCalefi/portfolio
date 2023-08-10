@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class ProgressBarComponent {
   @Input() img: string = '';
   @Input() tempo_anos: any = '';
+  @Input() tec_empresa: any = '';
 
   tempo_carreira: any = '';
 
@@ -30,7 +31,6 @@ export class ProgressBarComponent {
 
   calculaPorcentagem(){
     let diffAnos = (this.tempo_anos / this.tempo_carreira) * 100;
-
     return diffAnos;
   }
 }

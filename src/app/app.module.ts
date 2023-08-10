@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { ContatoPessoalComponent } from './components/contato-pessoal/contato-pessoal.component';
+import { EducacaoComponent } from './components/educacao/educacao.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ContatoPessoalComponent } from './components/contato-pessoal/contato-pe
     NomeFotoComponent,
     ExperienciaComponent,
     ProgressBarComponent,
-    ContatoPessoalComponent
+    ContatoPessoalComponent,
+    EducacaoComponent
   ],
   imports: [
     BrowserModule,

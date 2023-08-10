@@ -1,10 +1,15 @@
-<div style="display: flex;">
+<div class="pt-2" style="display: flex;">
     <img class="img-icon" src="{{ img }}" alt="">
-    <div class="w-100 px-2">
-        <div class="bar">
+    <div class="w-100 px-2" style="display: flex; align-items: center;">
+        <div class="progress2 progress-moved">
             <div class="progress-bar" style="height:24px; width: {{calculaPorcentagem()}}%">
-                <p style="color: var(--title-bar)">{{tempo_anos}} anos</p>
+                <p class="m-0" style="color: var(--title-bar);">{{tempo_anos}} anos</p>
             </div>
+        </div>
+        <div style="margin-left: 5px; display: flex; flex-wrap: wrap; justify-content: space-around;">
+            <div *ngIf="tec_empresa.includes('prefeitura');" class="circle-empresa" style="background-color: #f02b2b"></div>
+            <div *ngIf="tec_empresa.includes('abe3');" class="circle-empresa" style="background-color: #ffc200"></div>
+            <div *ngIf="tec_empresa.includes('itau');" class="circle-empresa" style="background-color: #2f329c"></div>
         </div>
     </div>
 </div>

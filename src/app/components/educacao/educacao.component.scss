@@ -1,0 +1,17 @@
+.title{
+    color: var(--title-bar);
+    font-weight: 500;
+}
+
+.subtitle{
+    font-size: 1.4vw;
+    line-height: 38px;
+    font-weight: 400;
+    color: var(--text-subtitle);
+}
+
+.position-icon{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
