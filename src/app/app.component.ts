@@ -9,17 +9,22 @@ export class AppComponent {
   title = 'portfolio';
 
   ngOnInit(){
+    if(localStorage.getItem('theme') != 'light' && localStorage.getItem('theme') != 'dark'){
+      localStorage.setItem('theme', 'dark');
+    }
+
     this.getTheme();
   }
 
   setTheme(){
     let theme: any = '';
     let yes: any = document.getElementById("checkbox");
+
     if(yes.checked == true){
-      theme = 'light';
+      theme = 'dark';
     }
     else if(yes.checked == false){
-      theme = 'dark';
+      theme = 'light';
     }
 
     document.body.classList.toggle('dark-theme');
@@ -32,11 +37,11 @@ export class AppComponent {
 
     if(theme == 'dark'){
       document.body.classList.toggle('dark-theme');
-      input.checked = false;
+      input.checked = true;
     }
     else if(theme == 'light'){
       document.body.classList.toggle('light-theme');
-      input.checked = true;
+      input.checked = false;
     }
   }
 }
