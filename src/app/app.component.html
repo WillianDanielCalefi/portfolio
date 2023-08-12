@@ -8,21 +8,34 @@
 </div>
 
 <div style="height: 100%; background-color: var(--body);">
-  <div class="row p-5 m-0">
+  <div class="row m-0" style="padding: 3rem 3rem 0rem 3rem;">
     <div class="border-superior p-0 m-0"></div>
-    <div class="col-7 p-4">
+    <div class="col-md-7 col-sm-12 p-4">
       <app-nome-foto></app-nome-foto>
       <div style="padding-top: 5%;">
         <app-educacao></app-educacao>
       </div>
     </div>
 
-    <!-- <div class="border-inferior p-0 m-0"></div> -->
-    <div class="col-5 p-4">
-      <app-experiencia></app-experiencia>
-      <div style="padding-top: 10%;">
-        <app-contato-pessoal></app-contato-pessoal>
+    <div class="col-md-5 col-sm-12 p-0">
+      <div style="float: right;">
+        <div class="p-4">
+          <app-experiencia></app-experiencia>
+        </div>
+        <div class="p-4 border-inferior" style="padding-top: 13% !important;">
+          <app-contato-pessoal></app-contato-pessoal>
+        </div>
       </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="rocket-position">
+  <div class="scene">
+    <div class="rocket">
+        <img style="filter: var(--color-icon);" src="assets/imagens/rocket.png" alt="">
     </div>
   </div>
 </div>

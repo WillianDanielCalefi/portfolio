@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    background: linear-gradient(90deg, #777CF4 0%, #F47777 134.74%),
+    background: linear-gradient(90deg, #907fe9 0%, #F47777 134.74%),
     linear-gradient(0deg, rgba(255, 255, 255, 0.19), rgba(255, 255, 255, 0.19));
     border-radius: 15px;
     transition: 0.4s linear;  
@@ -29,7 +29,6 @@
 }
 
 .progress-moved .progress-bar {
-    background-color: #EF476F;  
     animation: progressAnimation 4s;
 }
 

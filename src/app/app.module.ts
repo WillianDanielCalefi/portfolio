@@ -21,7 +21,7 @@ import { EducacaoComponent } from './components/educacao/educacao.component';
     ExperienciaComponent,
     ProgressBarComponent,
     ContatoPessoalComponent,
-    EducacaoComponent
+    EducacaoComponent,
   ],
   imports: [
     BrowserModule,

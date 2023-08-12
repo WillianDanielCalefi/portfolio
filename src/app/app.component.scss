@@ -1,6 +1,6 @@
 .border-superior{
-    width: 30%;
-    height: 40%;
+    width: 39%;
+    height: 28%;
     border: solid 2px #8b7ae0;
     border-radius: 40px 0px 0px 0px;
     border-right: none;
@@ -9,13 +9,10 @@
 }
 
 .border-inferior{
-    width: 30%;
-    height: 40%;
     border: solid 2px #8b7ae0;
     border-radius: 0px 0px 40px 0px;
     border-left: none;
     border-top: none;
-    position: absolute;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
@@ -94,3 +91,93 @@ body.dark h1, body.dark .support a {color: #fff;}
 .support a:hover{
   transform: scale(1.1);
 }
+
+.rocket-position{
+  width: 5%;
+  width: 5%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: rotate(0deg);
+  transition:
+    bottom 2s
+}
+
+
+.rocket-position:hover{
+  bottom: 85%;
+}
+
+.rocket-position:hover .scene .rocket::before{
+  background: linear-gradient(#dd0330,transparent);
+}
+
+.rocket-position:hover .scene .rocket::after{
+  background: linear-gradient(#dd0330,transparent);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scene{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scene i{
+  position: absolute;
+  top: -250px;
+  background: rgba(255,255,255, 0.5);
+  animation: animateStars linear infinite;
+}
+@keyframes animateStars {
+  0%{
+      transform: translateY(0);
+  }
+  100%{
+      transform: translateY(200vh);
+  }
+}
+
+.scene .rocket{
+  position: relative;
+  animation: animate 0.2s ease infinite;
+}
+@keyframes animate {
+      0%,100%{
+          transform: translateY(-2px);
+      }
+      50%{
+          transform: translateY(2px);
+      }
+
+}
+.scene .rocket::before{
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 200px;
+  background: linear-gradient(#907fe9,transparent);
+  transition: background 1s;
+}
+
+.scene .rocket::after{
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 200px;
+  background: linear-gradient(#907fe9,transparent);
+  transition: background 1s;
+  filter: blur(20px);
+}
+

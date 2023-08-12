@@ -3,7 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-:root .light-theme{
+:root {
     --primary: #1976d2;
     --body: #fff;
     --text-menu: #fff;
@@ -11,6 +11,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     --text-title: #000;
     --text-subtitle: #363636;
     --border-img: #B3B3B3;
+    --border-icon: #000;
     --title-bar: #000;
     --color-icon: invert(100%);
   }
@@ -23,6 +24,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     --text-title: #fff;
     --text-subtitle: #B3B3B3;
     --border-img: #fff;
+    --border-icon: #fff;
     --title-bar: #fff;
     --color-icon: invert(0%);
   }
