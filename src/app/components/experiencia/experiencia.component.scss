@@ -43,3 +43,17 @@
     border-radius: 30px;
     border: solid 0.5px #bfbfbf;
 }
+
+@media only screen and (max-width: 800px) {
+    .infos{
+        font-size: 1.6vw !important;
+        width: 100%;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .infos{
+        font-size: 2.5vw !important;
+        width: 100%;
+    }
+  }
