@@ -43,3 +43,10 @@
     border-radius: 30px;
     border: solid 0.5px #bfbfbf;
 }
+
+@media only screen and (max-width: 1000px) {
+    .img-icon{
+        width: 9%;
+        border-radius: 10px;
+    }
+}

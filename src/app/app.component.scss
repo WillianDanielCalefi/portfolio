@@ -181,3 +181,16 @@ body.dark h1, body.dark .support a {color: #fff;}
   filter: blur(20px);
 }
 
+@media only screen and (max-width: 600px) {
+  .div-exp {
+    padding-top: 0 !important;
+  }
+
+  .div-perfil{
+    padding-bottom: 0 !important;
+  }
+
+  .border-superior{
+    width: 73%;
+  }
+}

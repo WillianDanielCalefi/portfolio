@@ -15,3 +15,40 @@
     align-items: center;
     margin-right: 15px;
 }
+
+.div-educacao{
+    width: 40%;
+    display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+  .div-educacao{
+    width: 65% !important;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .div-educacao{
+    width: 100% !important;
+    display: flex;
+  }
+
+  .title{
+    margin: 0;
+  }
+
+  .icon{
+    width: 60%;
+    margin-top: -10px;
+  }
+
+  .position-icon{
+    margin-right: 0 !important;
+  }
+
+  .subtitle{
+    font-size: 2.5vw;
+    line-height: 15px;
+  }
+}
